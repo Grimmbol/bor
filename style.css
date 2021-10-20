@@ -12,24 +12,58 @@ h2 {
     font-size: 40pt;
 }
 
-.bilde-forklaring-wrapper {
-    display:flex;
+@media (min-width: 900px) { 
+    .bilde-forklaring-wrapper {
+	display:flex;
+    }
 }
 
-.bilde {
-    width: calc(50% - 20px);
-    margin-right: 20px;
+@media (min-width: 900px) { 
+    .bilde {
+	width: calc(50% - 20px);
+	margin-right: 20px;
+    }
 }
+
+@media (max-width: 899px) { 
+    .bilde {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+    }
+}
+
 
 .bilde img {
     width:100%;
 }
 
+.kreditering {
+    font-size: 12pt;
+    font-style: italic;
+    margin-top: 10px;
+}
+
 .forklaring {
     display: flex;
     flex-direction: column;
-    width: 50%;
+ 
 }
+
+@media (min-width: 900px) { 
+    .forklaring {
+	width: 50%;
+    }
+}
+
+@media (max-width: 899px) { 
+    .forklaring {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+    }
+}
+
 
 .forklaring > * {
     flex-grow: 1;
@@ -38,7 +72,6 @@ h2 {
 
 .forklaring h3 {
     text-align: center;
-    margin-top: 0px;
 }
 
 .lyd {
@@ -50,5 +83,5 @@ h2 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 20px;
 }
