@@ -1,7 +1,11 @@
+:root {
+    --min-content-width: 800px;
+}
+
 main {
     margin-left: auto;
     margin-right: auto;
-    width: min(800px, 90vw);
+    width: min(var(--min-content-width), 90vw);
 
     font-size: 16pt;
 }
@@ -12,20 +16,20 @@ h2 {
     font-size: 40pt;
 }
 
-@media (min-width: 900px) { 
+@media (min-width: 1000px) { 
     .bilde-forklaring-wrapper {
 	display:flex;
     }
 }
 
-@media (min-width: 900px) { 
+@media (min-width: 1000px) { 
     .bilde {
 	width: calc(50% - 20px);
 	margin-right: 20px;
     }
 }
 
-@media (max-width: 899px) { 
+@media (max-width: 999px) { 
     .bilde {
 	width: 90%;
 	margin-left: auto;
@@ -50,13 +54,13 @@ h2 {
  
 }
 
-@media (min-width: 900px) { 
+@media (min-width: 1000px) { 
     .forklaring {
 	width: 50%;
     }
 }
 
-@media (max-width: 899px) { 
+@media (max-width: 999px) { 
     .forklaring {
 	width: 90%;
 	margin-left: auto;
